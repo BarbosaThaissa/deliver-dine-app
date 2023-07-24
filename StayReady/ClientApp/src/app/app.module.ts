@@ -16,6 +16,8 @@ import { ContainerComponent } from './components/navbar-menu/container/container
 import { SearchComponent } from './components/navbar-menu/search/search.component';
 import { UserMenuComponent } from './components/navbar-menu/user-menu/user-menu.component';
 import { CategoriesComponent } from './components/navbar-menu/categories/categories.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { CategoriesComponent } from './components/navbar-menu/categories/categor
     ContainerComponent,
     SearchComponent,
     UserMenuComponent,
-    CategoriesComponent
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -40,9 +42,11 @@ import { CategoriesComponent } from './components/navbar-menu/categories/categor
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-    ])
+    ]),
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
