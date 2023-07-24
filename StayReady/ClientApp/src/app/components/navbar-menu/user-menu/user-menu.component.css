@@ -1,0 +1,18 @@
+div > .mat-icon {
+  width: 18px;
+  height: 18px;
+}
+
+div > .material-icons {
+  font-size: 19px;
+}
+
+article > .mat-icon {
+  width: 22px;
+  height: 22px;
+}
+
+article > .material-icons {
+  font-size: 22px;
+  margin-top: 5px;
+}

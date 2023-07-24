@@ -1,1 +1,64 @@
-<p>user-menu works! (props - currentUser=currentUser)</p>
+<section class="relative">
+  <div class="flex flex-row items-center gap-3">
+    <div
+      class="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
+    >
+      StayReady your home
+    </div>
+
+    <div
+      class="md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center justify-center gap-2 rounded-full cursor-pointer hover:shadow-md transition"
+    >
+      <mat-icon aria-label="menu icon">reorder</mat-icon>
+
+      <article class="hidden md:block">
+        <mat-icon aria-label="user icon">account_circle</mat-icon>
+      </article>
+    </div>
+  </div>
+  <!-- {isOpen && (
+      <div 
+        class="
+          absolute 
+          rounded-xl 
+          shadow-md
+          w-[40vw]
+          md:w-3/4 
+          bg-white 
+          overflow-hidden 
+          right-0 
+          top-12 
+          text-sm
+        "
+      >
+        <div class="flex flex-col cursor-pointer">
+          {currentUser ? (
+            <>
+              <MenuItem 
+                label="My trips" 
+                onClick={() => router.push('/trips')}
+              />
+              <MenuItem 
+                label="My favorites" 
+                onClick={() => router.push('/favorites')}
+              />
+              <MenuItem 
+                label="My reservations" 
+                onClick={() => router.push('/reservations')}
+              />
+              <MenuItem 
+                label="My properties" 
+                onClick={() => router.push('/properties')}
+              />
+              <MenuItem 
+                label="Airbnb your home" 
+                onClick={rentModal.onOpen}
+              />
+              <hr />
+              <MenuItem 
+                label="Logout" 
+                onClick={() => signOut()}
+              />
+            </> -->
+  <app-menu-items></app-menu-items>
+</section>

@@ -18,6 +18,7 @@ import { UserMenuComponent } from './components/navbar-menu/user-menu/user-menu.
 import { CategoriesComponent } from './components/navbar-menu/categories/categories.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/modules/material/material.module';
+import { MenuItemsComponent } from './components/navbar-menu/menu-items/menu-items.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MaterialModule } from './shared/modules/material/material.module';
     SearchComponent,
     UserMenuComponent,
     CategoriesComponent,
+    MenuItemsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
